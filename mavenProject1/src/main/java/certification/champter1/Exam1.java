@@ -12,5 +12,6 @@ public class Exam1 {
 //        float value3 = 1f * 0.0;
         float value4 = 1f * (short)0.0;
 //        float value5 = 1f * (boolean)0;
+        short x = 10;
     }
 }

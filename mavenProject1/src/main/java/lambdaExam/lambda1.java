@@ -21,8 +21,14 @@ public class lambda1 {
                         ))));
 
         List<String> strings =  one.twoList.stream().
-                flatMap(two -> two.threeList.stream().
-                        flatMap(three -> three.stringList.stream())).
+                flatMap(two ->
+                        two.
+                                threeList.
+                                stream().
+                                flatMap(three ->
+                                        three.
+                                                stringList.
+                                                stream())).
                 collect(Collectors.toList());
 
         System.out.println(strings);
