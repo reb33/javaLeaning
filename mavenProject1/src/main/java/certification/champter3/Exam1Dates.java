@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,5 +46,6 @@ public class Exam1Dates {
         LocalDate ld = LocalDate.of(2017,3,24);
         System.out.println(ld.format(d));
         System.out.println(LocalDate.of(2015, 4, 25));
+        System.out.println(LocalDate.now());
     }
 }

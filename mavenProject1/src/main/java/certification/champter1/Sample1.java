@@ -7,5 +7,15 @@ public class Sample1 {
 
     String first = "First";
 //    String third = second;
+//    {
+//        first = second;
+//    }
     String second = "Second";
+
+
+    public void firstMethod(){
+        secondMethod();
+    }
+
+    public void secondMethod(){}
 }

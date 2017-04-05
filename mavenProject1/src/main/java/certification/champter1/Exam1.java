@@ -13,5 +13,7 @@ public class Exam1 {
         float value4 = 1f * (short)0.0;
 //        float value5 = 1f * (boolean)0;
         short x = 10;
+
+        long y = 0, y1 = 1, y2 = 3;
     }
 }
