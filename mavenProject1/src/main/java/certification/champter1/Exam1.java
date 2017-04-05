@@ -15,5 +15,8 @@ public class Exam1 {
         short x = 10;
 
         long y = 0, y1 = 1, y2 = 3;
+
+        int x1 = new Integer(5);
+        System.out.println();
     }
 }
