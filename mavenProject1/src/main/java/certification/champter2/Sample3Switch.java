@@ -3,7 +3,7 @@ package certification.champter2;
 /**
  * Created by konstantin on 04.04.2017.
  */
-public class Sample3Swift {
+public class Sample3Switch {
 
     public static void main(String[] args) {
         String str1 = "qqq";
