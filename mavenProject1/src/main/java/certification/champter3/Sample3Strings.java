@@ -11,6 +11,23 @@ public class Sample3Strings{
         s2.concat("4");
         System.out.println(s2);
 
+
 //        String str = "a"
+
+        System.out.println("abc".concat("def"));
+
+//        String str = 1+2;
+
+        System.out.println("12 "+new StrA());
+        System.out.println("StrA".equals(new StrA().toString()));
+
+
+    }
+}
+
+class StrA{
+    @Override
+    public String toString() {
+        return "StrA";
     }
 }
