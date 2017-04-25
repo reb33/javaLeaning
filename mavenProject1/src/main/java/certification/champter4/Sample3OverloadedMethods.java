@@ -19,15 +19,19 @@ public class Sample3OverloadedMethods {
 
     public static void main(String[] args) {
         Sample3OverloadedMethods s = new Sample3OverloadedMethods();
-        s.print(3);
-        s.method3(1);
-        s.method3(2,3);
-        s.method3(2,4,5);
+//        s.print(3);
+//        s.method3(1);
+//        s.method3(2,3);
+//        s.method3(2,4,5);
+//
+//        s.method4(3);
+////        s.method3();
+//
+//        s.method5(4);
 
-        s.method4(3);
-//        s.method3();
+        s.method6(6L);
 
-        s.method5(4);
+
 
     }
 
@@ -56,4 +60,94 @@ public class Sample3OverloadedMethods {
     void method5 (Object o){
         System.out.println("method5 Object");
     }
+
+    /////////////////////////////////
+    void method6(int x){
+        System.out.println("method6 int");
+    }
+
+    void method6(Integer integer){
+        System.out.println("method6 Integer");
+    }
+
+    void method6(Object object){
+        System.out.println("method6 Object");
+    }
+
+//    void method6(long xl){
+//        System.out.println("method6 long");
+//    }
+
+    void method6(double xd){
+        System.out.println("method6 double");
+    }
+
+//    void method6(float xd){
+//        System.out.println("method6 float");
+//    }
+
+    void method6(int... xarr){
+        System.out.println("method6 varargs int");
+    }
+
+    void method6(long... xlarr){
+        System.out.println("method6 varargs long");
+    }
+
+    void method6(double... xdarr){
+        System.out.println("method6 varargs double");
+    }
+
+    void method6(float... xfarr){
+        System.out.println("method6 varargs float");
+    }
+
+    void method6(Integer... xIarr){
+        System.out.println("method6 varargs Integer");
+    }
+
+    void method6(Object... xoarr){
+        System.out.println("method6 varargs Object");
+    }
+
+//    //////////////////////////////
+//    void method7(Integer integer){
+//        System.out.println("method7 Integer");
+//    }
+//
+//    void method7(Object o){
+//        System.out.println("method7 Object");
+//    }
+//
+//    void method7(int i){
+//        System.out.println("method7 int");
+//    }
+//
+//    void method7(long l){
+//        System.out.println("method7 long");
+//    }
+//
+//    void method7(float f){
+//        System.out.println("method7 float");
+//    }
+//
+//    void method7(double d){
+//        System.out.println("method7 double");
+//    }
+//
+//    void method7(Integer... integerarr){
+//        System.out.println("method7 varargs Integer");
+//    }
+//
+//    void method7(int... iarr){
+//        System.out.println("method7 varargs int");
+//    }
+//
+//    void method7(Object... oarr){
+//        System.out.println("method7 varargs object");
+//    }
+//
+//    void method7(long... larr){
+//        System.out.println("method7 varargs long");
+//    }
 }
