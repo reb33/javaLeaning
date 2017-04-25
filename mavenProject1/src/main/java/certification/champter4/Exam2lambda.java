@@ -13,7 +13,7 @@ public class Exam2lambda{
         System.out.println(test((i) -> i==5));
         System.out.println(test((Integer i) -> i==5));
 //        System.out.println(test((int i) -> {return i==5;}));
-        System.out.println(test(i -> {return i==5;}));
+        System.out.println(test(i -> {return i==6;}));
     }
 
     private static boolean test(Predicate<Integer> p){
