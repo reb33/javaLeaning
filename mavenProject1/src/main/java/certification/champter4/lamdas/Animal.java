@@ -76,5 +76,7 @@ public class Animal {
         cat.printAnimalYears1(a -> a.age*4);
 
         cat.printPred(animal -> animal.isCanHop());
+
+        cat.printAnimalYears2(i -> {i=3; return i*3;});
     }
 }
