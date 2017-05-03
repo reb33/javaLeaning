@@ -19,15 +19,16 @@ public class Sample3OverloadedMethods {
 
     public static void main(String[] args) {
         Sample3OverloadedMethods s = new Sample3OverloadedMethods();
-//        s.print(3);
-//        s.method3(1);
-//        s.method3(2,3);
-//        s.method3(2,4,5);
-//
-//        s.method4(3);
-////        s.method3();
-//
-//        s.method5(4);
+        s.print(3);
+        s.method3(1);
+        s.method3(2,3);
+        s.method3(2,4,5);
+        s.method3(2,3,4,5,6);
+        s.method3(1L, 2L, 3L, 4L);
+
+        s.method4(3);
+
+        s.method5(4);
 
         s.method6(6L);
 
@@ -39,6 +40,14 @@ public class Sample3OverloadedMethods {
         System.out.println("method3 varargs");
     }
 
+    void method3(long i,int... args){
+        System.out.println("method3 long, varargs");
+    }
+
+//    void method3(Integer... args){
+//        System.out.println("method3 varargs Integer");
+//    }
+
 //    void method3(int[] args){} совпадает с предыдущим
 
     void method3(int i){
@@ -47,6 +56,18 @@ public class Sample3OverloadedMethods {
 
     void method3(int i, int x){
         System.out.println("method3 2int");
+    }
+
+    void method3(long l, long l2, long l3){
+        System.out.println("method3 3long");
+    }
+
+    void method3(long l, Integer integer, Object o, double d){
+        System.out.println("method3 longIntegerObject_double");
+    }
+
+    void method3(long l, float f, Object o, double d){
+        System.out.println("method3 longfloatObject_double");
     }
 
     void method4 (Integer integer){
