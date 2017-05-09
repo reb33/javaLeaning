@@ -24,7 +24,8 @@ public class Sample3OverloadedMethods {
         s.method3(2,3);
         s.method3(2,4,5);
         s.method3(2,3,4,5,6);
-        s.method3(1L, 2L, 3L, 4L);
+        System.out.println(s.method3(1L, 2L, 3L, 4L));
+        System.out.println(s.method3(2,3,4,5));
 
         s.method4(3);
 
@@ -50,8 +51,11 @@ public class Sample3OverloadedMethods {
 
 //    void method3(int[] args){} совпадает с предыдущим
 
-    void method3(int i){
+    void method3(Integer i){
         System.out.println("method3 int");
+    }
+    void method3(float i){
+        System.out.println("method3 float");
     }
 
     void method3(int i, int x){
@@ -62,12 +66,17 @@ public class Sample3OverloadedMethods {
         System.out.println("method3 3long");
     }
 
-    void method3(long l, Integer integer, Object o, double d){
-        System.out.println("method3 longIntegerObject_double");
+    String method3(long l, int i, Object o, double d){
+        return "method3 long_intObject_double";
     }
 
-    void method3(long l, float f, Object o, double d){
+    boolean method3(long l, float f, Object o, double d){
         System.out.println("method3 longfloatObject_double");
+        return true;
+    }
+    boolean method3(long... l){
+        System.out.println("varargs_longs");
+        return false;
     }
 
     void method4 (Integer integer){
