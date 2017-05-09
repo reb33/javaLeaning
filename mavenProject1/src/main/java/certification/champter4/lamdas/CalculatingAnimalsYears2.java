@@ -5,5 +5,9 @@ package certification.champter4.lamdas;
  */
 public interface CalculatingAnimalsYears2 {
 
+//    void haas();
+
     int calculatingAnimalsYears(int i);
+
+
 }

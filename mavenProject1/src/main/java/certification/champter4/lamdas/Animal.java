@@ -78,5 +78,12 @@ public class Animal {
         cat.printPred(animal -> animal.isCanHop());
 
         cat.printAnimalYears2(i -> {i=3; return i*3;});
+
+        cat.printPred(new Predicate<Animal>() {
+            @Override
+            public boolean test(Animal animal) {
+                return animal.isCanSwim();
+            }
+        });
     }
 }
