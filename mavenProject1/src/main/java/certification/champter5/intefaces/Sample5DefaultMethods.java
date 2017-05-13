@@ -8,6 +8,11 @@ public class Sample5DefaultMethods implements OneInter5, TwoInter5{
     public void method1() {
         System.out.println("method1_class");
     }
+
+    public static void main(String[] args) {
+        SecondClass secondClass = new SecondClass();
+        secondClass.method1();
+    }
 }
 
 interface OneInter5{
@@ -32,3 +37,8 @@ abstract class abstractClass implements OneInter5, TwoInter5{
     @Override
     public abstract void method1();
 }
+interface FourInter5 extends OneInter5{
+
+}
+
+class SecondClass implements FourInter5{}

@@ -9,6 +9,7 @@ class ParentClass{
     protected void method1(){}
     ret2 method2(){return null;}
     void method3() throws exc2{}
+    long method4(){return 9;}
 }
 
 public class Sample7Overriding extends ParentClass {
@@ -19,7 +20,12 @@ public class Sample7Overriding extends ParentClass {
     ret2 method2(){return null;}
 //    void method3() throws exc1{}
 //    void method3() throws exc2, DataFormatException{}
-    void method3() throws exc3{}
+    void method3() throws exc3, RuntimeException{}
+//    int method4() {return 9;}
+
+    public static void main(String[] args) {
+
+    }
 }
 
 class SubClass extends Sample7Overriding{
