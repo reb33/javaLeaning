@@ -32,6 +32,7 @@ public class Sample3OverloadedMethods {
         s.method5(4);
 
         s.method6(6L);
+//        s.method6(2,3);
 
 
 
@@ -104,17 +105,17 @@ public class Sample3OverloadedMethods {
         System.out.println("method6 Object");
     }
 
-//    void method6(long xl){
-//        System.out.println("method6 long");
-//    }
+    void method6(long xl){
+        System.out.println("method6 long");
+    }
 
     void method6(double xd){
         System.out.println("method6 double");
     }
 
-//    void method6(float xd){
-//        System.out.println("method6 float");
-//    }
+    void method6(float xd){
+        System.out.println("method6 float");
+    }
 
     void method6(int... xarr){
         System.out.println("method6 varargs int");
