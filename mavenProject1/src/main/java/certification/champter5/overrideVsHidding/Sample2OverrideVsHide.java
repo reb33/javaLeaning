@@ -14,6 +14,9 @@ public class Sample2OverrideVsHide extends ParentClass{
     void printChild(){
         System.out.println(String.format("It is CHILD print length='%s' staticItIs='%s' nonStaticItIs='%s'", String.valueOf(length), itIs(), itIs2()));
     }
+    void print(){
+        System.out.println(String.format("It is CHILD print length='%s' staticItIs='%s' nonStaticItIs='%s'", String.valueOf(length), itIs(), itIs2()));
+    }
 
     public void setLength(int length) {
         this.length = length;
@@ -25,7 +28,7 @@ public class Sample2OverrideVsHide extends ParentClass{
         s.printChild();
 
         System.out.println();
-        ParentClass s2 = s;
+        ParentClass s2 = new Sample2OverrideVsHide();
         s2.printParent();
 
         System.out.println();
@@ -41,6 +44,9 @@ public class Sample2OverrideVsHide extends ParentClass{
         System.out.println(s.itIs());
         System.out.println(s2.itIs());
 
+        s.print();
+        s2.print();
+
 
     }
 }
@@ -54,6 +60,9 @@ class ParentClass{
         return "parentClass2";
     }
     void printParent(){
+        System.out.println(String.format("It is PARENT print length='%s' staticItIs='%s' nonStaticItIs='%s'", String.valueOf(length), itIs(), itIs2()));
+    }
+    void print(){
         System.out.println(String.format("It is PARENT print length='%s' staticItIs='%s' nonStaticItIs='%s'", String.valueOf(length), itIs(), itIs2()));
     }
     public void setLength(int length) {

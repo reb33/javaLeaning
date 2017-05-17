@@ -1,6 +1,7 @@
 package certification.champter6;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  * Created by konstantin on 16.05.2017.
@@ -33,6 +34,7 @@ public class Sample3Exceptions {
         try{
             throw new FileNotFoundException();
         }catch (FileNotFoundException e){}
+        catch (IOException e){}
         try{
             method4();
         }catch (RuntimeException e){
