@@ -40,8 +40,8 @@ public class Sample5Arrays {
         Integer[] aarr = ints.toArray(new Integer[0]);
         System.out.println(Arrays.toString(aarr));
 
-        String[][][] x1 = new String[1][][];
-        x1[0] = new String [1][];
+        String[][][] x1 = new String[1][0][0];
+        x1[0] = new String [1][0];
         x1[0][0] = new String[1];
         x1[0][0][0] = "2";
         System.out.println();
