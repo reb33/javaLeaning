@@ -38,5 +38,6 @@ public class Sample5Arrays {
         System.out.println(Arrays.toString(aarr));
 
         int[][][] x1 = new int[1][][];
+        System.out.println();
     }
 }

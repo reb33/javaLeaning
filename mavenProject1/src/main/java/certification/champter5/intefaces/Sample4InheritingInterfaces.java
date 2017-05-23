@@ -58,6 +58,6 @@ interface TwoInter {
     void threeMethod();
     Object fourMethod();
     void fiveMethod() throws IOException, Exception;
-//    void sixMethod(); //запрещено abstract и default с одной сигнатурой
+//   void sixMethod(); //запрещено abstract и default с одной сигнатурой
 //    void sevenMethod(); //запрещено abstract и static с одной сигнатурой
 }
