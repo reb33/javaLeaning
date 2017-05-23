@@ -9,8 +9,8 @@ import java.util.List;
 public class Sample10ArraysSorting {
 
     public static void main(String[] args) {
-        Integer[] arrInt1 = {3, 7, 4, 2};
-        Arrays.sort(arrInt1, (i1,i2)->i2-i1);
+        int[] arrInt1 = {3, 7, 4, 2};
+        Arrays.sort(arrInt1 /*,(i1,i2)->i2-i1*/);
 //        List<Integer> list = ;
         System.out.println(Arrays.asList(arrInt1));
     }
