@@ -33,4 +33,9 @@ public class Swan extends Bird{
         System.out.println(uglyDuck.getNameBird());
         System.out.println(uglyDuck.text);
     }
+
+    void check5(){
+        Bird bird = new Swan();
+//        System.out.println(bird.getNameBird()); //protected недоступен
+    }
 }
