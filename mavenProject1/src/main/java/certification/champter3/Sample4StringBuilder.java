@@ -19,5 +19,10 @@ public class Sample4StringBuilder{
         System.out.println(sb1);
         sb1.append(sb2);
         System.out.println(sb1);
+
+
+        StringBuilder str = new StringBuilder("Java");
+        System.out.println(str.append("vaJ$").substring(0,4));
+        System.out.println(str.append("vaJ$").substring(3,7));
     }
 }

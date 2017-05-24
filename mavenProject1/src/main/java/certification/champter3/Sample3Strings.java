@@ -21,7 +21,9 @@ public class Sample3Strings{
         System.out.println("12 "+new StrA());
         System.out.println("StrA".equals(new StrA().toString()));
 
-
+        String str = "012345678";
+        System.out.println(str.substring(1,3));
+        System.out.println(str.substring(1,9));
     }
 }
 

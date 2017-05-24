@@ -14,7 +14,7 @@ public class Sample5Arrays {
         int[] a1_1 = new int[3];
 //        System.out.println(a1_1[3]); //ArrayIndexOutOfBoundsException
 
-//        int[] a1 = new int[]; нужно инициировать или указать scope
+        int[] a1 = new int[0]; //нужно инициировать или указать scope
         int[] a2 = new int[]{1,2,3};//избыточность, но не показывается
         int[] a3 = {1,2,3}; //только в одной строке с объявлением
         int[] a4;
@@ -40,9 +40,9 @@ public class Sample5Arrays {
         Integer[] aarr = ints.toArray(new Integer[0]);
         System.out.println(Arrays.toString(aarr));
 
-        String[][][] x1 = new String[1][0][0];
-        x1[0] = new String [1][0];
-        x1[0][0] = new String[1];
+        String[][][] x1 = new String[1][0][5];
+//        x1[0] = new String [0][];
+//        x1[0][0] = new String[1];
         x1[0][0][0] = "2";
         System.out.println();
     }
