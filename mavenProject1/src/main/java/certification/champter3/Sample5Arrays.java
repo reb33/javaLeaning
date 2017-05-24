@@ -41,7 +41,7 @@ public class Sample5Arrays {
         System.out.println(Arrays.toString(aarr));
 
         String[][][] x1 = new String[1][0][5];
-//        x1[0] = new String [0][];
+        x1[0] = new String [1][5];
 //        x1[0][0] = new String[1];
         x1[0][0][0] = "2";
         System.out.println();
