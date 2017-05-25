@@ -13,4 +13,8 @@ public class UglyDuck extends Swan {
         Swan swan = new Swan();
 //        swan.getNameBird(); //доступен только текущий класс или наследники, родительские НЕТ!!!!
     }
+
+    void check9(){
+        getNameBird();
+    }
 }
