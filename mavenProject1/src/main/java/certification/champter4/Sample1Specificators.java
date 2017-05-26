@@ -18,4 +18,12 @@ public abstract class Sample1Specificators {
     public abstract void test6();
 
     final public static void test7(){}
+
+    private final void test8(){}
+
+    private static void test9(){}
+
+//    private abstract void test10(); //private abstract нельзя
+//    public final abstract void test10();
+//    public static abstract void test11();
 }

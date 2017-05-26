@@ -8,6 +8,7 @@ public class Sample9Hidding extends ParentClass2 {
         System.out.println("child method1");
     }
     int a1 = 20;
+
 }
 
 class ParentClass2{

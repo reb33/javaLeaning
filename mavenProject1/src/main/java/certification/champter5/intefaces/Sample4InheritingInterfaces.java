@@ -52,6 +52,7 @@ interface OneInter{
     void fiveMethod() throws DataFormatException;
     default void sixMethod(){}
     static void sevenMethod(){}
+    static void eightMethod(){}
 }
 interface TwoInter {
     void twoMethod();
@@ -60,4 +61,5 @@ interface TwoInter {
     void fiveMethod() throws IOException, Exception;
 //   void sixMethod(); //запрещено abstract и default с одной сигнатурой
 //    void sevenMethod(); //запрещено abstract и static с одной сигнатурой
+    default void eightMethod(){}
 }
