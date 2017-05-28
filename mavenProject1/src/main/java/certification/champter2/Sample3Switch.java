@@ -18,5 +18,10 @@ public class Sample3Switch {
                 break;
             }
         }
+
+        boolean isIt = true;
+//        switch (isIt){
+//
+//        }
     }
 }

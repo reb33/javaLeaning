@@ -7,6 +7,8 @@ public class Sample5Final {
 
     final int var1;
     static final int var2;
+//    final boolean bool1;  //final должен быть инициирован
+    boolean bool2;
     static {
         var2=1;
     }
@@ -18,5 +20,6 @@ public class Sample5Final {
     public static void main(String[] args) {
         Sample5Final s = new Sample5Final(1);
         System.out.println(s.var1);
+        System.out.println(s.bool2);
     }
 }
