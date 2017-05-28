@@ -62,6 +62,9 @@ public class Animal {
     public void printPred(Predicate<Animal> p){
         System.out.println("Predicate "+p.test(this));
     }
+    public void printPred1(Predicate<Integer> p, int x){
+        System.out.println("Predicate "+p.test(x));
+    }
 
     public static void main(String[] args) {
         Animal cat = new Animal("Cat", true, true, 10);
@@ -71,7 +74,7 @@ public class Animal {
 
         cat.print2(() -> true);
 
-        cat.printAnimalYears2(i -> i*3);
+        cat.printAnimalYears2((int i) -> i*3);
 
         cat.printAnimalYears1(a -> a.age*4);
 
@@ -85,5 +88,7 @@ public class Animal {
                 return animal.isCanSwim();
             }
         });
+
+        cat.printPred1((Integer i)-> i>3, 3);
     }
 }

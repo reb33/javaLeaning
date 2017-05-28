@@ -3,7 +3,7 @@ package certification.champter1;
 /**
  * Created by konstantin on 29.03.2017.
  */
-public class Sample4{
+public class Sample4Naming {
     public static void main(String[] args){
         int contInue = 1;
 //        int const = 1;

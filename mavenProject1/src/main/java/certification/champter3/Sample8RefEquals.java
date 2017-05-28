@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by konstantin on 18.04.2017.
  */
-public class Sample8PrimEquals {
+public class Sample8RefEquals {
 
     public static void main(String[] args) {
         Object o = new Object();

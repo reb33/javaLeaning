@@ -1,5 +1,6 @@
 package certification.champter5.intefaces;
 
+import java.io.IOException;
 import java.util.Objects;
 import java.util.zip.DataFormatException;
 
@@ -23,9 +24,9 @@ public class Sample4InheritingInterfaces extends ParentClass /*implements OneInt
     }
 
     @Override
-    public String fourMethod() {
+    public Integer fourMethod() {
         return null;
-    }
+    }   //переопределенные методы должны соответствовать 2 методам в интерфейсах
 
     @Override
     public void fiveMethod() {
@@ -47,16 +48,18 @@ abstract class ParentClass implements OneInter, TwoInter{}
 interface OneInter{
     void oneMethod();
     void threeMethod();
-    String fourMethod();
+    Number fourMethod();
     void fiveMethod() throws DataFormatException;
     default void sixMethod(){}
     static void sevenMethod(){}
+    static void eightMethod(){}
 }
-interface TwoInter{
+interface TwoInter {
     void twoMethod();
     void threeMethod();
-//    Objects fourMethod();
-    void fiveMethod() throws NumberFormatException;
-//    void sixMethod(); //запрещено abstract и default с одной сигнатурой
+    Object fourMethod();
+    void fiveMethod() throws IOException, Exception;
+//   void sixMethod(); //запрещено abstract и default с одной сигнатурой
 //    void sevenMethod(); //запрещено abstract и static с одной сигнатурой
+    default void eightMethod(){}
 }
