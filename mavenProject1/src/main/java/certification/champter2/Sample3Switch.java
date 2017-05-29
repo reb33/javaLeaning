@@ -42,5 +42,10 @@ public class Sample3Switch {
                 System.out.println("5");
             }
         }
+
+        boolean isIt = true;
+//        switch (isIt){
+//
+//        }
     }
 }
