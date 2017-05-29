@@ -11,6 +11,8 @@ public class Sample6Statics implements OneInter6 {
 //        method1(); //static методы не наследуются
 //        Sample6Statics.method1();
         OneInter6.method1();
+        Sample6Statics s = new Sample6Statics();
+//        s.method1(); //static методы не наследуются
     }
 }
 
