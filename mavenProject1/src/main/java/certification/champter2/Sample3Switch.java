@@ -10,14 +10,14 @@ public class Sample3Switch {
         final String str2 = "www";
         String str3 = "ccc";
         switch (str1){
-            case "qqq":{
+            case "qqq":
                 System.out.println("qqq");
                 break;
-            }
-            case str2:{
+
+            case str2:
                 System.out.println("www");
                 break;
-            }
+
 //            case str3:{   должно быть final
 //
 //            }
@@ -46,6 +46,11 @@ public class Sample3Switch {
         boolean isIt = true;
 //        switch (isIt){
 //
+//        }
+
+        final String fstr4 = str3;
+//        switch (str1) {  //значение должно устанавливаться константой
+//            case(fstr4):
 //        }
     }
 }

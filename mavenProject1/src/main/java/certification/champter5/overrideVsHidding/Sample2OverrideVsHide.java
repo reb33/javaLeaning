@@ -30,6 +30,7 @@ public class Sample2OverrideVsHide extends ParentClass{
         System.out.println();
         ParentClass s2 = new Sample2OverrideVsHide();
         s2.printParent();
+        System.out.println(s2.length);
 
         System.out.println();
         ParentClass s3 = new ParentClass();

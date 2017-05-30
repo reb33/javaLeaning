@@ -21,5 +21,9 @@ public class Sample5Final {
         Sample5Final s = new Sample5Final(1);
         System.out.println(s.var1);
         System.out.println(s.bool2);
+
+        final int x2;
+        x2=5;
+        final int x3;
     }
 }

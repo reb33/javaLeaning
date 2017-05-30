@@ -5,3 +5,13 @@ package certification.champter5.intefaces;
  */
 public abstract  interface Samples3Interface { //не обязательно включать abstract
 }
+
+interface S2{
+
+}
+
+class C2{
+    public static void main(String[] args) {
+        System.out.println(1);
+    }
+}
