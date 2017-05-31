@@ -17,6 +17,14 @@ public class Sample5Final {
         this.var1 = var1;
     }
 
+    Sample5Final(){
+        this(1);
+    } //если добавляется конструктор, то в каждом нужно инициализировать final переменные или ссылку на тот в котором есть
+
+    Sample5Final(String s){
+        this();
+    }
+
     public static void main(String[] args) {
         Sample5Final s = new Sample5Final(1);
         System.out.println(s.var1);

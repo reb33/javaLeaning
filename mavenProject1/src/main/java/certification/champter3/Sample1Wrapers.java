@@ -15,5 +15,38 @@ public class Sample1Wrapers {
         System.out.println(z);
         z += 10;
         System.out.println(z);
+
+        System.out.println(++z instanceof Integer);
+        m1(z++);
+        System.out.println("после метода "+z);
+        m1(z);
+        System.out.println("после метода "+z);
+        m2(z);
+        System.out.println("после 2 метода "+z);
+        m3(z);
+        System.out.println("после 3 метода "+z);
+        m4(z);
+        System.out.println("после 4 метода "+z);
+
+//        System.out.println(1 instanceof Integer);
+
+//        System.out.println(new Long(null)); //нельзя NumberFormatException
+//        System.out.println(new Integer(null)); //нельзя NumberFormatException
+//        System.out.println(new String(null));
+        System.out.println(new Boolean(null));
+
+    }
+
+    static void m1(Integer i){
+        System.out.println("в методе "+i++);
+    }
+    static void m2(int i){
+        i++;
+    }
+    static void m3(Integer i){
+        i=30;
+    }
+    static void m4(Integer i){
+        i+=5;
     }
 }

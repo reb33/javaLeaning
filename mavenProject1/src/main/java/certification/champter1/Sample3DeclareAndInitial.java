@@ -11,5 +11,23 @@ public class Sample3DeclareAndInitial {
         Sample3DeclareAndInitial s = new Sample3DeclareAndInitial();
         System.out.println(s1+ s2+ s3+ s4);
         System.out.println(s.String);
+
+        int n = 0;
+        String s2;
+        if (true)
+            s2="";
+
+        System.out.println(s2);
+
+//        byte b = 128; //128 за пределами byte
+//        int i = 028; //неправильное число в восмеричной системе
+//        int i = 0x1G  //неправильное число в 16 системе
+//        byte by = 1+127; //128 за пределами byte
+        byte by = 1+1;  //если сумма констант то может быть ссужена
+//        byte byt = by+1; //если что-то не константа то ссужено не может быть
+//        byte byt1 = 1L;  //long не ссужается
+//        byte byt2 = 1f;  //float не ссужается
+//        short sh1 = 32767+1;
+//        char c = 65536;
     }
 }
