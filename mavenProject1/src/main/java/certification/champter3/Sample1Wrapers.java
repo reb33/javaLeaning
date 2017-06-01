@@ -32,6 +32,7 @@ public class Sample1Wrapers {
 
 //        System.out.println(new Long(null)); //нельзя NumberFormatException
 //        System.out.println(new Integer(null)); //нельзя NumberFormatException
+//        new Integer("");  //нельзя NumberFormatException
 //        System.out.println(new String(null));
         System.out.println(new Boolean(null));
 
