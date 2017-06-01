@@ -35,6 +35,10 @@ public class Sample1Wrapers {
 //        System.out.println(new String(null));
         System.out.println(new Boolean(null));
 
+
+        Byte b = 1; // ссужает в byte, потом оборачивает
+//        Byte b1 = new Byte(1); //не работает Byte от int
+
     }
 
     static void m1(Integer i){

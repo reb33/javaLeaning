@@ -24,6 +24,12 @@ public class Sample3Strings{
         String str = "012345678";
         System.out.println(str.substring(1,3));
         System.out.println(str.substring(1,9));
+        System.out.println(str.substring(0, str.length()));
+
+        String str1 = "one";
+        String str2 = "two";
+        System.out.println(str1.equals(str1=str2));
+        System.out.println(str1);
     }
 }
 

@@ -29,5 +29,7 @@ public class Sample3DeclareAndInitial {
 //        byte byt2 = 1f;  //float не ссужается
 //        short sh1 = 32767+1;
 //        char c = 65536;
+        byte byt3 = 0b11;
+//        byte byt4 = 0b12; //2 в двоичной системе
     }
 }

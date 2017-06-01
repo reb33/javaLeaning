@@ -18,5 +18,10 @@ public class Sample2Ternary {
 
         int x1 = 5;
         System.out.println(x1>2?x1<4?10:8:7);
+
+        int i=10;
+//        System.out.println(true? 1:out1());
     }
+    static void out1(){}
+    static void  out2(){}
 }
