@@ -53,6 +53,7 @@ interface OneInter{
     default void sixMethod(){}
     static void sevenMethod(){}
     static void eightMethod(){}
+    default void nineMethod(){}
 }
 interface TwoInter {
     void twoMethod();
@@ -62,4 +63,5 @@ interface TwoInter {
 //   void sixMethod(); //запрещено abstract и default с одной сигнатурой
 //    void sevenMethod(); //запрещено abstract и static с одной сигнатурой
     default void eightMethod(){}
+    static int nineMethod(){return 0;}
 }

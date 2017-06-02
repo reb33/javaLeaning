@@ -9,8 +9,10 @@ import java.util.List;
  * Created by konstantin on 10.04.2017.
  */
 public class Sample5Arrays {
+    int[] arr=new int[2];
 
     public static void main(String[] args) {
+        Sample5Arrays a = new Sample5Arrays();
         int[] a1_1 = new int[3];
 //        System.out.println(a1_1[3]); //ArrayIndexOutOfBoundsException
 
@@ -20,7 +22,7 @@ public class Sample5Arrays {
         int[] a4;
 //        a4 = {2,3,4}; не допускается
 
-        a4 = new int[]{3,4,5};
+        a4 = new int[]{3,4,5,};
 
         int a5 [] = {3,4,5};
 
@@ -45,5 +47,8 @@ public class Sample5Arrays {
 //        x1[0][0] = new String[1];
         x1[0][0][0] = "2";
         System.out.println();
+
+
+        System.out.println(x1.getClass().isArray());
     }
 }

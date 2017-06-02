@@ -16,6 +16,8 @@ public class Sample8RefEquals {
         System.out.println(o==integer);
         System.out.println(s==o);
         System.out.println(o==s);
+        Object o2 = s;
+        System.out.println(o2==integer);
 //        System.out.println(s==integer);
 
         List list = new ArrayList();
