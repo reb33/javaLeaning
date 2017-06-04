@@ -40,8 +40,17 @@ public class Sample3Exceptions {
         }catch (RuntimeException e){
 
         }
+
+        try{method5();}
+        catch (Exception e){}
+        finally {
+
+        }
+
     }
 
     static void method3() throws FileNotFoundException{}
     void method4(){}
+
+    void method5() throws Exception{}
 }
