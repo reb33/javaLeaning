@@ -40,12 +40,15 @@ public class Sample4InheritingInterfaces extends ParentClass /*implements OneInt
 
         OneInter o = new Sample4InheritingInterfaces();
         TwoInter t = new Sample4InheritingInterfaces();
+        System.out.println(o.VALUE);
+        System.out.println(t.VALUE);
     }
 }
 
 abstract class ParentClass implements OneInter, TwoInter{}
 
 interface OneInter{
+    int VALUE=10;
     void oneMethod();
     void threeMethod();
     Number fourMethod();
@@ -56,6 +59,7 @@ interface OneInter{
     default void nineMethod(){}
 }
 interface TwoInter {
+    int VALUE=20;
     void twoMethod();
     void threeMethod();
     Object fourMethod();
