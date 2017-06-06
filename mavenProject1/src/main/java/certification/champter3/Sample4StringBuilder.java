@@ -32,5 +32,10 @@ public class Sample4StringBuilder{
         sb3.setLength(10);
         System.out.println(sb3);
 
+        System.out.println(m1());
+
+    }
+    static String m1(){
+        return new StringBuilder("qwer")+"tyui";
     }
 }

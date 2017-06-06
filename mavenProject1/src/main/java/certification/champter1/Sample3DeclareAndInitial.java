@@ -31,5 +31,6 @@ public class Sample3DeclareAndInitial {
 //        char c = 65536;
         byte byt3 = 0b11;
 //        byte byt4 = 0b12; //2 в двоичной системе
+        by *= n;
     }
 }

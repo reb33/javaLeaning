@@ -29,3 +29,5 @@ class Sub extends ParentClass{
     }
 }
 
+abstract class Sub2 extends Sub{}
+
