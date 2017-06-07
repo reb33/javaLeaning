@@ -121,21 +121,21 @@ public class Sample3OverloadedMethods {
         System.out.println("method6 varargs int");
     }
 
-    void method6(long... xlarr){
-        System.out.println("method6 varargs long");
-    }
-
-    void method6(double... xdarr){
-        System.out.println("method6 varargs double");
-    }
-
-    void method6(float... xfarr){
-        System.out.println("method6 varargs float");
-    }
-
-    void method6(Integer... xIarr){
-        System.out.println("method6 varargs Integer");
-    }
+//    void method6(long... xlarr){
+//        System.out.println("method6 varargs long");
+//    }
+//
+//    void method6(double... xdarr){
+//        System.out.println("method6 varargs double");
+//    }
+//
+//    void method6(float... xfarr){
+//        System.out.println("method6 varargs float");
+//    }
+//
+//    void method6(Integer... xIarr){
+//        System.out.println("method6 varargs Integer");
+//    }
 
     void method6(Object... xoarr){
         System.out.println("method6 varargs Object");

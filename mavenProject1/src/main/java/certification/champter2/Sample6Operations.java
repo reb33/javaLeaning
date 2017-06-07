@@ -58,5 +58,18 @@ public class Sample6Operations {
         n=10;
         n += n=5;
         System.out.println(n);
+
+        //12
+        i=5;
+        System.out.println(~i);
+        //13
+        System.out.println(3&i);
+//        System.out.println(~b1);
+
+        //14
+        i = Integer.MIN_VALUE;
+        n=-i;
+        System.out.println(n+"   "+i);
+
     }
 }

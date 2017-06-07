@@ -16,11 +16,31 @@ public class Sample7CheckFinally {
     }
 
     public static void main(String[] args) {
+        Sample7CheckFinally s = new Sample7CheckFinally();
+        s.m3();
+        s.m4();
         try {
             new Sample7CheckFinally().method1();
         }
         finally {
             System.out.println("mainMethod11111");
+        }
+    }
+    void m3(){
+        try{
+            return;
+//            System.out.println();
+        }finally {
+            System.out.println("m3 finally");
+        }
+    }
+    void m4(){
+        try{
+            throw new NullPointerException();
+        }catch (NullPointerException e){
+            return;
+        }finally {
+            System.out.println("m4 finally");
         }
     }
 }

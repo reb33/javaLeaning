@@ -10,5 +10,8 @@ public class Sample7Circles{
 //            System.out.println("Hi");
 //
 //        }while(y++<3);
+        lb:for (;true;){
+            break lb;
+        }
     }
 }
