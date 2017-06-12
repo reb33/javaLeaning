@@ -34,6 +34,8 @@ public class Test2 {
         String str = "test";
         String str2 = "est";
         t.m2(str2, s -> s.startsWith("t"));
+//        t.m2(str2, str -> str.isEmpty()); //нельзя использовать уже объявленную переменную
+//        t.m2(str2, (String str)-> str.isEmpty()); //тоже самое
 
     }
 }
