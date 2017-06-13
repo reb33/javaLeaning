@@ -32,5 +32,10 @@ public class Sample3DeclareAndInitial {
         byte byt3 = 0b11;
 //        byte byt4 = 0b12; //2 в двоичной системе
         by *= n;
+        final int i= 1;
+        by=i;
+
+        char ch = (char)by;
+        n=1/0;
     }
 }

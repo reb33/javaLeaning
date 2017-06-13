@@ -9,7 +9,7 @@ public class Sample3Switch {
         String str1 = "qqq";
         final String str2 = "www";
         String str3 = "ccc";
-        switch (str1){
+       label: switch (str1){
             case "qqq":
                 System.out.println("qqq");
                 break;
@@ -52,5 +52,9 @@ public class Sample3Switch {
 //        switch (str1) {  //значение должно устанавливаться константой
 //            case(fstr4):
 //        }
+        switch(1){
+            case 2:
+            case 3:
+        }
     }
 }

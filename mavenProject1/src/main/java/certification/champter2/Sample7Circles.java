@@ -14,5 +14,8 @@ public class Sample7Circles{
 //        while(1<1){   //unreachable
 //
 //        }
+        lb:for (;true;){
+            break lb;
+        }
     }
 }

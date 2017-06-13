@@ -78,7 +78,8 @@ public class Animal {
 
         cat.printAnimalYears1(a -> a.age*4);
 
-        cat.printPred(animal -> animal.isCanHop());
+        cat.printPred(((Predicate<Animal>) animal -> animal.isCanHop()).and(animal -> animal.isCanSwim()));
+        cat.printPred(((Predicate<Animal>) animal -> false).and(animal -> false));
 
         cat.printAnimalYears2(i -> {i=3; return i*3;});
 

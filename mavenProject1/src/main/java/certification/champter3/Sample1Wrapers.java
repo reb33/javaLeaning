@@ -42,8 +42,26 @@ public class Sample1Wrapers {
         System.out.println(new Boolean(null));
 
 
-        Byte b = 1; // ссужает в byte, потом оборачивает
+        System.out.println();
+        System.out.println("блок 3:");
+        Byte b = 4; // ссужает в byte, потом оборачивает
 //        Byte b1 = new Byte(1); //не работает Byte от int
+        i=4;
+//        i==b;
+        Integer i3 = 2;
+        Integer i4 = 2;
+        i4++;
+        System.out.println(b==4);
+        System.out.println(i==(char)4);
+        Integer i1 = ++i4;
+        Integer i2 = 4;
+        System.out.println(i1==i2);
+        System.out.println(i1.equals(b));
+        System.out.println(i1.equals(b.byteValue()));
+        System.out.println(i1==b.byteValue());
+
+        i=(int)b.byteValue();
+        int i5 = b.byteValue();
 
     }
 
