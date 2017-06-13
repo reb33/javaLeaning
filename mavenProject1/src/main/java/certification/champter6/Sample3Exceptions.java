@@ -46,6 +46,9 @@ public class Sample3Exceptions {
         finally {
 
         }
+        try{
+            method4();
+        }catch (Exception e){}
 
     }
 

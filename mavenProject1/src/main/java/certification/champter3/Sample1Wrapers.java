@@ -61,16 +61,20 @@ public class Sample1Wrapers {
         //3
         System.out.println(i1==--i2);
         //4
-        System.out.println(i1==i6);
+        i4--;
+        System.out.println(i3+i4==++i2);
         //5
-        System.out.println(i1.equals(b));
+        System.out.println(i1==i6);
         //6
-        System.out.println(i1.equals(b.byteValue()));
+        System.out.println(i1.equals(b));
         //7
+        System.out.println(i1.equals(b.byteValue()));
+        //8
         System.out.println(i1==b.byteValue());
 
         i=(int)b.byteValue();
         int i5 = b.byteValue();
+        new Long(3);
 
     }
 
