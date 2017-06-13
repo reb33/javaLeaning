@@ -10,5 +10,9 @@ public class Sample7Circles{
 //            System.out.println("Hi");
 //
 //        }while(y++<3);
+
+//        while(1<1){   //unreachable
+//
+//        }
     }
 }
