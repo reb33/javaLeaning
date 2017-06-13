@@ -30,6 +30,8 @@ public class Sample3Strings{
         String str2 = "two";
         System.out.println(str1.equals(str1=str2));
         System.out.println(str1);
+        System.out.println(str1 == "tw"+"o");
+        System.out.println(str1 == "two ".trim());
     }
 }
 

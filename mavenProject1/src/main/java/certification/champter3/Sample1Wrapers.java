@@ -51,13 +51,22 @@ public class Sample1Wrapers {
         Integer i3 = 2;
         Integer i4 = 2;
         i4++;
+        //1
         System.out.println(b==4);
+        //2
         System.out.println(i==(char)4);
-        Integer i1 = ++i4;
+        Integer i1 = i4;
         Integer i2 = 4;
-        System.out.println(i1==i2);
+        Integer i6 = new Integer(3);
+        //3
+        System.out.println(i1==--i2);
+        //4
+        System.out.println(i1==i6);
+        //5
         System.out.println(i1.equals(b));
+        //6
         System.out.println(i1.equals(b.byteValue()));
+        //7
         System.out.println(i1==b.byteValue());
 
         i=(int)b.byteValue();
