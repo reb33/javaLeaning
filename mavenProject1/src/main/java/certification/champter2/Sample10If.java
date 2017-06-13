@@ -14,5 +14,9 @@ public class Sample10If {
                 System.out.println(2);
         else
             System.out.println(3);
+
+        if (1==1);
+        else
+            System.out.println();
     }
 }

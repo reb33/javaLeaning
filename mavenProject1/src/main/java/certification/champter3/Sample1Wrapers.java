@@ -27,6 +27,11 @@ public class Sample1Wrapers {
         System.out.println("после 3 метода "+z);
         m4(z);
         System.out.println("после 4 метода "+z);
+        m4(3);
+//        m4((short)3);
+        m5(2);
+        m2(new Short("3"));
+        m2(new Byte("2"));
 
 //        System.out.println(1 instanceof Integer);
 
@@ -72,4 +77,5 @@ public class Sample1Wrapers {
     static void m4(Integer i){
         i+=5;
     }
+    static void m5(Object o){}
 }

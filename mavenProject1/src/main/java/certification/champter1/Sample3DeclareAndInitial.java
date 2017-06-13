@@ -40,6 +40,8 @@ public class Sample3DeclareAndInitial {
 //        by=i1;
         final byte by1 = 3;
 
+        char ch = (char) by;
+        by = (byte) ch;
         char ch = (char)by;
         ch=by1;
         n=1/0;
