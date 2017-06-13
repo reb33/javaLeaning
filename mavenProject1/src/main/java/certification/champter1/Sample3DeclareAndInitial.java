@@ -14,6 +14,7 @@ public class Sample3DeclareAndInitial {
 
         int n = 0;
         String s2;
+        boolean bool = true;
         if (true)
             s2="";
 
@@ -32,10 +33,15 @@ public class Sample3DeclareAndInitial {
         byte byt3 = 0b11;
 //        byte byt4 = 0b12; //2 в двоичной системе
         by *= n;
-        final int i= 1;
+        final int i=1;
+        final int i1;
+        i1=1;
         by=i;
+//        by=i1;
+        final byte by1 = 3;
 
         char ch = (char)by;
+        ch=by1;
         n=1/0;
     }
 }

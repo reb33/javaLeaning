@@ -14,7 +14,10 @@ public class Sample5Arrays {
     public static void main(String[] args) {
         Sample5Arrays a = new Sample5Arrays();
         int[] a1_1 = new int[3];
+        System.out.println(a1_1[0]);
 //        System.out.println(a1_1[3]); //ArrayIndexOutOfBoundsException
+        String[] strs1 = new String[4];
+        System.out.println(strs1[0]);
 
         int[] a1 = new int[0]; //нужно инициировать или указать scope
         int[] a2 = new int[]{1,2,3};//избыточность, но не показывается
@@ -34,6 +37,7 @@ public class Sample5Arrays {
 
         String[] strs = {"werr","wer"};
         Object[] objs = strs;
+        strs = (String[]) objs;
 //        objs[0] = new StringBuilder();
         System.out.println(objs[0]);
 
