@@ -4,6 +4,8 @@ package certification.champter2;
  * Created by konstantin on 04.04.2017.
  */
 public class Sample3Switch {
+    final static Integer X_INT_CONST = 12;
+    final static Short S_SHORT_CONST = 13;
 
     public static void main(String[] args) {
         String str1 = "qqq";
@@ -30,7 +32,13 @@ public class Sample3Switch {
         final short s1 = 2;
         final short s2 = 4;
         final short s3 = 5;
-        switch (3){
+        final byte b1 = 6;
+        final char c1 = 7;
+        final Integer xInt = 8;
+        final Short sShort = 9;
+        final Byte bByte = 10;
+        final Character cCharset =11;
+        switch (new Short((short)3)){
             case 2:{}
 //            case x:{} не final
             case  x1:{}
@@ -41,6 +49,14 @@ public class Sample3Switch {
             case s3:{
                 System.out.println("5");
             }
+            case b1:
+            case c1:
+//            case xInt:
+//            case sShort:
+//            case bByte:
+//            case cCharset:
+//            case X_INT_CONST:
+//            case S_SHORT_CONST:
         }
 
         boolean isIt = true;

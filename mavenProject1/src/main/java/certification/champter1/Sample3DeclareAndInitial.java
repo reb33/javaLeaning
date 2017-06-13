@@ -35,7 +35,8 @@ public class Sample3DeclareAndInitial {
         final int i= 1;
         by=i;
 
-        char ch = (char)by;
+        char ch = (char) by;
+        by = (byte) ch;
         n=1/0;
     }
 }
