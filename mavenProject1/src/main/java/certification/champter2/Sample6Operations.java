@@ -71,5 +71,10 @@ public class Sample6Operations {
         n=-i;
         System.out.println(n+"   "+i);
 
+        //15
+        double d1 = 107;
+        i = (int) (d1/9);
+        System.out.println(i);
+
     }
 }
