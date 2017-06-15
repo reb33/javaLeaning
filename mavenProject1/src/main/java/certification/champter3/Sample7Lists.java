@@ -19,6 +19,13 @@ public class Sample7Lists {
         System.out.println(list1.get(2));
         int x = list1.get(0);
         int y = list1.get(1);
-        int z = list1.get(2);
+//        int z = list1.get(2); //NullPointerException
+
+        List<Byte> listByte = new ArrayList<>();
+        listByte.add((byte)1);
+        List<Double> listDouble  = new ArrayList<>();
+//        listDouble.add(111);
+        listDouble.add(1d);
+        System.out.println(listDouble.contains("111"));
     }
 }

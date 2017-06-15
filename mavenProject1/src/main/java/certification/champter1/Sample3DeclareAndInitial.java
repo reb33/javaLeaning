@@ -43,6 +43,18 @@ public class Sample3DeclareAndInitial {
         char ch = (char) by;
         by = (byte) ch;
         ch=by1;
-        n=1/0;
+//        n=1/0;
+        n=2/3;
+
+        double d = .1;
+        float f = .1f;
+        d = 01.1;
+        System.out.println(f);
+        f=1;
+        System.out.println(f);
+        f=0x1;
+        System.out.println(f);
+        f=Float.parseFloat("0b1");
+        System.out.println(f);
     }
 }

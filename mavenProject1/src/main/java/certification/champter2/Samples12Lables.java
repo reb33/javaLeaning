@@ -46,6 +46,8 @@ public class Samples12Lables {
         label: m2();
         label:
         System.out.println(2);
+
+
     }
     void m2(){}
 }

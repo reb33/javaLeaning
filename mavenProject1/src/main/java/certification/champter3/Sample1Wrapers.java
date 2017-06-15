@@ -76,6 +76,30 @@ public class Sample1Wrapers {
         int i5 = b.byteValue();
         new Long(3);
 
+        Byte b1 = 3;
+        Short s1 = 3;
+        Character c1 = 3;
+        int privInt = b1;
+        privInt = s1;
+        privInt = c1;
+        byte privByte = b1;
+//        privByte = c1;
+//        privByte = i;
+        short privShort = b1;
+        privShort = s1;
+//        privShort = c1;
+//        privShort = i;
+        char privChar = c1;
+//        c1=null;
+//        privChar = c1;
+        new Double(111);
+
+        System.out.println("block4:");
+        System.out.println(b1.equals(3));
+        System.out.println(new Long(3).equals(3));
+        System.out.println(new Integer(3).equals(3));
+
+
     }
 
     static void m1(Integer i){
