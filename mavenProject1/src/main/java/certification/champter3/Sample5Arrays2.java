@@ -6,7 +6,7 @@ package certification.champter3;
 public class Sample5Arrays2 {
 
     public static void main(String[] args) {
-        m1();
+        m2();
 
 
     }
@@ -21,7 +21,14 @@ public class Sample5Arrays2 {
     }
 
     static void m2 (){
-
+        int [][] a1 = {{11,12},{21,22}};
+        int i = 99;
+        try {
+            a1[i = 1][new Integer(null)]++;
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        System.out.println(i);
     }
 
 }

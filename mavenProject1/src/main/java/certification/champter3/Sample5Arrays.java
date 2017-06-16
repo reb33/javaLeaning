@@ -54,5 +54,16 @@ public class Sample5Arrays {
 
 
         System.out.println(x1.getClass().isArray());
+        m1();
+    }
+
+    static void m1(){
+        int[][][] aaa = new int[1][][];
+        int [][] aa = new int[1][1];
+
+//        aaa[0] = aa;
+        aa = aaa[0];
+        System.out.println();
+        System.out.println(aa[1].length);
     }
 }

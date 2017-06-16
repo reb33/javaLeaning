@@ -57,4 +57,13 @@ public class Sample3DeclareAndInitial {
         f=Float.parseFloat("0b1");
         System.out.println(f);
     }
+
+    final int perc=0;
+    void m1(){
+        int x,y,z;
+        if (perc<10){
+            x=y=z=1;
+        }
+        System.out.println(x+y+z);
+    }
 }

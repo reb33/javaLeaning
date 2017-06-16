@@ -14,8 +14,16 @@ public class Sample1 {
 
 
     public void firstMethod(){
-        secondMethod();
+        /*secondMethod();*/
     }
 
-    public void secondMethod(){}
+    public void second(){}
+
+    public static void main(String[] args) {
+        String String = "String";
+        String.toLowerCase();
+
+        System.out.println(""+true+null);
+        System.out.println((String)null+null);
+    }
 }
