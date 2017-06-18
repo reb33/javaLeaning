@@ -18,10 +18,17 @@ public class Sample16Dates8 {
         System.out.println(dt2);
 
         parsing();
+        parsing2();
     }
 
     public static void parsing(){
         LocalDate d = LocalDate.parse("2015-01-01", DateTimeFormatter.ISO_LOCAL_DATE);
         System.out.println(d);
+    }
+    static void parsing2(){
+        LocalDateTime dt = LocalDateTime.parse("2015-01-01T01:11");
+        System.out.println(dt);
+        dt = LocalDateTime.parse("2015-01-01T21:11:11");
+        System.out.println(dt);
     }
 }

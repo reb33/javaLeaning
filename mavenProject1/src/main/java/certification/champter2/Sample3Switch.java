@@ -72,5 +72,9 @@ public class Sample3Switch {
             case 2:
             case 3:
         }
+
+//        switch (2d){
+//
+//        }
     }
 }

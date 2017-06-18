@@ -10,7 +10,7 @@ public class Sample6CatchingExceptions {
         try{
             throw new IllegalArgumentException();
         }catch (Exception e){
-            System.out.println("cathing Exception");
+            System.out.println("catching Exception");
         }
 //        catch (RuntimeException e){    //RuntimeException нельзя объявлять после Exception так как это подкласс
 //

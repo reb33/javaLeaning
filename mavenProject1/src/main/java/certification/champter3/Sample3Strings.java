@@ -39,6 +39,10 @@ public class Sample3Strings{
         str = null;
         System.out.println(String.valueOf(null));
     }
+
+    String m1(){
+        return new StrA()+"";
+    }
 }
 
 class StrA{

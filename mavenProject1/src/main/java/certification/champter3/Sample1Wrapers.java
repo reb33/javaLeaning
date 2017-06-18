@@ -93,6 +93,7 @@ public class Sample1Wrapers {
 //        c1=null;
 //        privChar = c1;
         new Double(111);
+//        i = privShort
 
         System.out.println("block4:");
         System.out.println(b1.equals(3));

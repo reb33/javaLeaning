@@ -26,6 +26,8 @@ public class Sample7Lists {
         List<Double> listDouble  = new ArrayList<>();
 //        listDouble.add(111);
         listDouble.add(1d);
+
+        String str;
         System.out.println(listDouble.contains("111"));
     }
 }
