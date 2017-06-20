@@ -37,12 +37,19 @@ public class Sample3Strings{
 
 //        System.out.println(new String((String)null));
         str = null;
-        System.out.println(String.valueOf(null));
+        System.out.println(String.valueOf((Object) null));
+        m2();
     }
 
     String m1(){
         return new StrA()+"";
     }
+
+    static void m2(){
+        String str = "XCv";
+        System.out.println(str.replace('X', (char)11));
+    }
+
 }
 
 class StrA{

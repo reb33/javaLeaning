@@ -76,12 +76,31 @@ public class Sample1Wrapers {
         int i5 = b.byteValue();
         new Long(3);
 
+
+
+
+        wrapsEqualsPriv();
+
+    }
+    static void wrapsEqualsPriv(){
+        System.out.println("\n wrapsEqualsPriv:");
+        Byte b1=3;
+        System.out.println("block4:");
+        System.out.println(b1.equals(3));
+        System.out.println(new Long(3).equals(3));
+        System.out.println(new Integer(3).equals(3));
+    }
+    static void wrapsToPriv(){
+        System.out.println("\n wrapsToPriv:");
+
+        Integer i =1;
         Byte b1 = 3;
         Short s1 = 3;
         Character c1 = 3;
         int privInt = b1;
         privInt = s1;
         privInt = c1;
+        Long l = 1L;
         byte privByte = b1;
 //        privByte = c1;
 //        privByte = i;
@@ -94,12 +113,18 @@ public class Sample1Wrapers {
 //        privChar = c1;
         new Double(111);
 //        i = privShort
+        double privDouble = c1;
+        privDouble = i;
 
-        System.out.println("block4:");
-        System.out.println(b1.equals(3));
-        System.out.println(new Long(3).equals(3));
-        System.out.println(new Integer(3).equals(3));
+        final Integer i2 = 3;
+        final int privInt1=3;
+//        privChar=i2;
+        privChar=privInt1;
+        float privFloat = l;
 
+        Float f=1f;
+//        long privLong = f;
+//        b1 = i2;
 
     }
 

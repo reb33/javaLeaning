@@ -31,4 +31,13 @@ public class Sample5Arrays2 {
         System.out.println(i);
     }
 
+    static void m3(){
+        int[] i,j[], z[][];
+        i=new int[]{1};
+        j=new int[2][3];
+        z = new int[1][][];
+        i=j[1];
+        j=z[0];
+    }
+
 }

@@ -47,6 +47,10 @@ public class Samples12Lables {
         label:
         System.out.println(2);
 
+        if1: if(true){
+            break if1;
+        }
+
 
     }
     void m2(){}

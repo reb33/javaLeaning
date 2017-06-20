@@ -33,9 +33,17 @@ public class Sample4StringBuilder{
         System.out.println(sb3);
 
         System.out.println(m1());
+        System.out.println("\nm2:");
+        m2();
 
     }
     static String m1(){
         return new StringBuilder("qwer")+"tyui";
+    }
+    static void m2(){
+        StringBuilder sb = new StringBuilder("0123456789");
+        sb.delete(2,16);
+        System.out.println(sb);
+        
     }
 }
