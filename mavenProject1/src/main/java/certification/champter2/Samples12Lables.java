@@ -49,7 +49,7 @@ public class Samples12Lables {
 
         if1: if(true){
             break if1;
-        }
+        }lab:System.out.println();
 
 
     }

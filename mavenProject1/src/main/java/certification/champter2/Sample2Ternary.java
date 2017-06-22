@@ -21,7 +21,30 @@ public class Sample2Ternary {
 
         int i=10;
 //        System.out.println(true? 1:out1());
+
+        byte b =1;
+        short s=1;
+        s = true?b:s;
+        b = true?b:1+1;
+        b = true?1:128+2;
+        Byte byt = 1;
+        Integer integer = 3;
+//        s=(short)integer
+        String str = b>1?null:"str";
+
+        Number n = b>1?new Integer(3):(Number) 3;
+        n = b>1?new Integer(3):new Double(3d);
+        str=true?null:null;
+        System.out.println(false?b:128+2);
+        System.out.println(true?byt:1+2);
+        System.out.println((true?3:new Integer(3)));
+        System.out.println(b>1?new Integer(3):new Double(3d));
+        System.out.println(b>1?"s":new Double(3d));
+        System.out.println(true?new A():new B());
+//        System.out.println(null);
     }
     static void out1(){}
     static void  out2(){}
 }
+class A{}
+class B{}

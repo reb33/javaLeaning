@@ -35,8 +35,10 @@ public class Sample3DeclareAndInitial {
         by *= n;
         final int i=1;
         final int i1;
+        final short s1 = 1;
         i1=1;
         by=i;
+        by=s1;
 //        by=i1;
         final byte by1 = 3;
 
@@ -54,7 +56,7 @@ public class Sample3DeclareAndInitial {
         System.out.println(f);
         f=0x1;
         System.out.println(f);
-        f=Float.parseFloat("0b1");
+//        f=Float.parseFloat("0b1");
         System.out.println(f);
     }
 
