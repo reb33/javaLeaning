@@ -55,15 +55,24 @@ public class Sample5Arrays {
 
         System.out.println(x1.getClass().isArray());
         m1();
+        m2();
     }
 
     static void m1(){
         int[][][] aaa = new int[1][][];
         int [][] aa = new int[1][1];
 
-//        aaa[0] = aa;
+        aaa[0] = aa;
         aa = aaa[0];
         System.out.println();
-        System.out.println(aa[1].length);
+        System.out.println(aa[0].length);
+    }
+
+    static void m2(){
+        String[] strings = new String[10];
+        Object[] objects = new Object[10];
+        boolean[] booleans = new boolean[10];
+        int[] ints = new int[10];
+        System.out.println(strings[0]+" "+objects[0]+" "+booleans[0]+" "+ints[0]);
     }
 }
