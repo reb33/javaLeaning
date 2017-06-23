@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.time.temporal.TemporalAdjusters;
 
 /**
  * Created by konstantin on 23.05.2017.
@@ -24,6 +25,8 @@ public class Sample12DateFormatter {
 
         DateTimeFormatter dateTimeFormatter_time =DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM);
         System.out.println(dateTimeFormatter_time.format(localTime));
+
+//        localDate.with(TemporalAdjusters.)
         
     }
 }

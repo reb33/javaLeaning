@@ -17,9 +17,16 @@ public class Sample8InvokeMethodWithNull {
 //    void m1(String s){
 //        System.out.println("m1_String");
 //    }
+    void m2(int i){
+        System.out.println("m2_int");
+    }
+    void m2(Object o){
+        System.out.println("m2_Object");
+    }
 
     public static void main(String[] args) {
         Sample8InvokeMethodWithNull s = new Sample8InvokeMethodWithNull();
         s.m1(null);
+        s.m2(null);
     }
 }

@@ -1,5 +1,6 @@
 package certification.champter5;
 
+import java.io.IOException;
 import java.util.zip.DataFormatException;
 
 /**
@@ -15,6 +16,7 @@ class ParentClass{
     void method(){
         method1();
     }
+    void method5() throws Exception{}
 }
 
 public class Sample7Overriding extends ParentClass {
@@ -36,6 +38,7 @@ public class Sample7Overriding extends ParentClass {
         ParentClass s = new Sample7Overriding();
         s.method();
     }
+    void method5() throws exc1, exc2, exc2, exc3, exc1, IOException, Exception{}
 }
 
 class SubClass extends Sample7Overriding{

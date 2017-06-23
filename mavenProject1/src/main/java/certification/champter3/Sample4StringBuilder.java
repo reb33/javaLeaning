@@ -31,6 +31,7 @@ public class Sample4StringBuilder{
         System.out.println(sb3);
         sb3.setLength(10);
         System.out.println(sb3);
+        System.out.println(sb3.charAt(5));
 
         System.out.println(m1());
         System.out.println("\nm2:");

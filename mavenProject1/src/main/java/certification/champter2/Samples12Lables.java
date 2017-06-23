@@ -48,6 +48,7 @@ public class Samples12Lables {
         System.out.println(2);
 
         if1: if(true){
+            if2:System.out.println();
             break if1;
         }lab:System.out.println();
 
