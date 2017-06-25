@@ -43,9 +43,16 @@ public class Sample4InheritingInterfaces extends ParentClass /*implements OneInt
         System.out.println(o.VALUE);
         System.out.println(t.VALUE);
     }
+
+    @Override
+    public void m12() {
+
+    }
 }
 
-abstract class ParentClass implements OneInter, TwoInter{}
+abstract class ParentClass implements OneInter, TwoInter{
+    abstract public void m12();
+}
 
 interface OneInter{
     int VALUE=10;
@@ -57,6 +64,7 @@ interface OneInter{
     static void sevenMethod(){}
     static void eightMethod(){}
     default void nineMethod(){}
+    default void m12(){}
 }
 interface TwoInter {
     int VALUE=20;
@@ -66,6 +74,11 @@ interface TwoInter {
     void fiveMethod() throws IOException, Exception;
 //   void sixMethod(); //запрещено abstract и default с одной сигнатурой
 //    void sevenMethod(); //запрещено abstract и static с одной сигнатурой
-    default void eightMethod(){}
+    default int eightMethod(){return 0;}
     static int nineMethod(){return 0;}
+    default void m12(){}
+}
+
+interface Int3 extends OneInter, TwoInter{
+    void m12();
 }
