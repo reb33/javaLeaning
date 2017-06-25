@@ -26,6 +26,8 @@ class Sub extends ParentClass{
         ParentClass p = new Sub();
         System.out.println(p.b);
         System.out.println(p.d);
+
+//        Sub s = new ParentClass();
     }
 }
 

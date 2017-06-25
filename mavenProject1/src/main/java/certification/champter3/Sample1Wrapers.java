@@ -80,6 +80,7 @@ public class Sample1Wrapers {
 
 
         wrapsEqualsPriv();
+        m1();
 
     }
     static void wrapsEqualsPriv(){
@@ -126,6 +127,7 @@ public class Sample1Wrapers {
 //        long privLong = f;
 //        b1 = i2;
 
+
     }
 
     static void m1(Integer i){
@@ -141,4 +143,11 @@ public class Sample1Wrapers {
         i+=5;
     }
     static void m5(Object o){}
+
+    static void m1(){
+        Double d = new Double("1D");
+        System.out.println(d);
+        d = new Double("3f");
+        System.out.println(d);
+    }
 }

@@ -36,6 +36,10 @@ public class Sample4StringBuilder{
         System.out.println(m1());
         System.out.println("\nm2:");
         m2();
+        System.out.println("\nm3:");
+        m3();
+        System.out.println("\nm4:");
+        m4();
 
     }
     static String m1(){
@@ -46,5 +50,15 @@ public class Sample4StringBuilder{
         sb.delete(2,16);
         System.out.println(sb);
         
+    }
+    static void m3(){
+        StringBuilder sb = new StringBuilder("01234567");
+        sb.substring(1,8);
+        System.out.println(sb);
+    }
+    static void m4(){
+        StringBuilder sb = new StringBuilder("01234567");
+        sb.delete(0,sb.length());
+        System.out.println(sb);
     }
 }
