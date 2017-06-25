@@ -8,7 +8,7 @@ public class Sample11Static {
         System.out.println(Sub11.str);
         System.out.println(Parent11.sub11==null);
 
-//        System.out.println(Sub11_2.m2());
+        System.out.println(Sub11_2.m2());
         System.out.println(Sub11_2.str);
 
     }
@@ -41,7 +41,7 @@ class Parent11_2 implements Inter11{
 }
 class Sub11_2 extends Parent11_2{
     static {
-        System.out.println("static initiator Parent11_2");
+        System.out.println("static initiator Sub11_2");
     }
 }
 

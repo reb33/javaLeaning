@@ -12,8 +12,10 @@ public class Child extends Parent {
     }
 
     public static void main(String[] args) {
-        Child p = new Child();
-        p.method1();
+        Child c = new Child();
+        c.method1();
+        Parent p =c;
+//        p.method1();
 
 //        Child c = (Child)new Parent();
     }

@@ -26,4 +26,5 @@ public abstract class Sample1Specificators {
 //    private abstract void test10(); //private abstract нельзя
 //    public final abstract void test10();
 //    public static abstract void test11();
+//    public abstract synchronized void test12(){}
 }
