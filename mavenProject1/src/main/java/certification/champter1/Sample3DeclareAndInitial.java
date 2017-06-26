@@ -55,6 +55,9 @@ public class Sample3DeclareAndInitial {
         f=1;
         System.out.println(f);
         f=0x1;
+//        f=0x1.1;
+        f=010f;
+//        f=0b1f;
         System.out.println(f);
 //        f=Float.parseFloat("0b1");
         System.out.println(f);
