@@ -38,7 +38,7 @@ public class Sample7Overriding extends ParentClass {
         ParentClass s = new Sample7Overriding();
         s.method();
     }
-    void method5() throws exc1, exc2, exc2, exc3, exc1, IOException, Exception{}
+    void method5() throws exc1, exc2, exc2, exc3, exc1, IOException{}
 }
 
 class SubClass extends Sample7Overriding{
