@@ -130,6 +130,17 @@ public class Sample1Wrapers {
 
     }
 
+    static void privToWraps(){
+        Double d = 1d;
+//        d = 1; //нет автосужения
+        Float f = 1f;
+//        f = 1;  //тоже
+        Long l = 1L;
+//        l = 1;  //тоже
+//        l = (byte)1;
+
+    }
+
     static void m1(Integer i){
         System.out.println("в методе "+i++);
     }

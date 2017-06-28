@@ -34,6 +34,7 @@ public class Sample3Strings{
         System.out.println(str1 == "two ".trim());
         String str3 = "o";
         System.out.println(str1 == "tw"+str3);
+        str1.charAt(0);
 
 //        System.out.println(new String((String)null));
         str = null;

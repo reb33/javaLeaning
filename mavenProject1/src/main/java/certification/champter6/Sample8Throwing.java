@@ -12,10 +12,10 @@ public class Sample8Throwing {
         new Sample8Throwing().m1();
     }
 
-    void m1(){
+    void m1() throws Exception{
         Exception e =null;
 //        throw e;
         RuntimeException re = null;
-        throw re;
+        throw null;
     }
 }

@@ -17,5 +17,14 @@ public class Sample11Loops {
 //        for (int i=0; false;i++){  //unreachable
 //            System.out.println(1);
 //        }
+//        while(1<1){  //unreachable
+//
+//        }
+        int i = 1;
+        while (i<1){} //ok
+        final int i1 = 1;
+//        while (i1<1){ //unreacheble
+//
+//        }
     }
 }

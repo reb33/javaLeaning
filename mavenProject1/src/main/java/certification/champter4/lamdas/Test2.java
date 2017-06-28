@@ -33,7 +33,9 @@ public class Test2 {
 
         String str = "test";
         String str2 = "est";
+        final String[] sarr = new String[1];
         t.m2(str2, s -> s.startsWith("t"));
+        t.m2(str2, s->{sarr[0]="e"; return s.startsWith(sarr[0]);});
 //        t.m2(str2, str -> str.isEmpty()); //нельзя использовать уже объявленную переменную
 //        t.m2(str2, (String str)-> str.isEmpty()); //тоже самое
 

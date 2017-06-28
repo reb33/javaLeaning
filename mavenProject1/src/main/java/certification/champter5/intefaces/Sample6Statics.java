@@ -23,6 +23,7 @@ public class Sample6Statics implements OneInter6 {
 
 interface OneInter6 extends TwoInter6, ThreeInter6{ //ошибка при наследовании одинаковых переменных из интерфейсов
     int x1=1;
+//    int y=1;
     static void method1(){
         System.out.println("method1");
     }

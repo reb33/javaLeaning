@@ -25,12 +25,15 @@ public class Sample3Exceptions {
     void boot(){
         try {
             method3();
-        }catch (FileNotFoundException e){}
+        }
+//        catch (FileNotFoundException e){}
+        catch (IOException e){}
 //        try{
-//            method4();                         //нельзя проверять на checked исключения если они в коде try не бросаются
-//        }catch (FileNotFoundException e){
+//            method4();
+//            throw new FileNotFoundException();
+//        }catch (IOException e){  //нельзя проверять на checked исключения если они в коде try не бросаются
 //
-//        }
+//        }/*catch (Exception e){}*/
         try{
             throw new FileNotFoundException();
         }catch (FileNotFoundException e){}
@@ -52,7 +55,7 @@ public class Sample3Exceptions {
 
     }
 
-    static void method3() throws FileNotFoundException{}
+    static void method3() throws FileNotFoundException, IOException,FileNotFoundException,FileNotFoundException{}
     void method4(){}
 
     void method5() throws Exception{}
