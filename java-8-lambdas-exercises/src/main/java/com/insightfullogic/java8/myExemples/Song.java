@@ -2,6 +2,7 @@ package com.insightfullogic.java8.myExemples;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -10,6 +11,7 @@ import lombok.ToString;
 @ToString
 @AllArgsConstructor
 @Getter
+@NoArgsConstructor
 public class Song {
     String name;
     double duration;
