@@ -17,7 +17,7 @@ public class StringCollectorTest {
 
 	@Test
 	public void testIdentityConstraint() {
-		// From javadoc of Collector interface:
+		// From javadoc of Collector interfaces:
 		// The identity constraint says that for any partially accumulated result,
 		// combining it with an empty result container must produce an equivalent result.
 		// That is, for a partially accumulated result a that is the result of any series of 
@@ -45,7 +45,7 @@ public class StringCollectorTest {
 	
 	@Test
 	public void testAssociativityConstraint() {
-		// From javadoc of Collector interface:
+		// From javadoc of Collector interfaces:
 		// The associativity constraint says that splitting the computation must produce an equivalent result.
 		
 		StringCollector collector = new StringCollector(", ", "<!--", "-->");	

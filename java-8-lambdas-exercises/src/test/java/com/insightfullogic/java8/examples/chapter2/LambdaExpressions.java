@@ -162,7 +162,7 @@ private void overloadedMethod(IntegerBiFunction lambda) {
 //        overloadedMethod((x) -> true);
 //    }
 
-//    private interface IntPredicate  {
+//    private interfaces IntPredicate  {
 //        public boolean test(int value);
 //    }
 
