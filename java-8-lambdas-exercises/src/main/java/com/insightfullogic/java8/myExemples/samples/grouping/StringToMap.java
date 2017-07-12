@@ -1,7 +1,6 @@
-package com.insightfullogic.java8.myExemples.samples;
+package com.insightfullogic.java8.myExemples.samples.grouping;
 
 import java.util.*;
-import java.util.stream.Collector;
 
 
 import static java.util.stream.Collectors.*;
