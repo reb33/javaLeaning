@@ -36,7 +36,7 @@ public class StringGrouping2 {
 //        System.out.println(listToString(list));
 //        System.out.println(listToStr2(list));
 
-        listNameSongs2();
+        listNameSongs();
     }
 
 
@@ -47,9 +47,7 @@ public class StringGrouping2 {
                 .collect(Collectors.groupingBy(Album::getName,
                         Collectors.reducing(new ArrayList<String>(),
                                 album -> album.getTracks().stream().map(Song::getName).collect(Collectors.toList()),
-                                (u, u2) -> {
-                                    return u2;
-                                })));
+                                (u, u2) -> u2)));
         System.out.println(listNameSongs);
     }
 

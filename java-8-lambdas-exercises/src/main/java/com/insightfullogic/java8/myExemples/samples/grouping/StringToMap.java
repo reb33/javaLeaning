@@ -32,8 +32,8 @@ public class StringToMap {
     public static Map<String,Integer> strToMap2(String str){
         return str.chars()
                 .boxed()
-                .collect(groupingBy(i->Character.valueOf((char)i.intValue())
-                                .toString().toLowerCase(), reducing(0,i->1,(l,r)->l+r)));
+                .collect(groupingBy(StringToMap::IToSLower,
+                        reducing(0,i->1,(l,r)->l+r)));
     }
 
     public static Map<String,Long> strToMap3(String str){
