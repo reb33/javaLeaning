@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.IntStream;
 
 /**
@@ -32,11 +33,15 @@ public class OptimisationExample {
     }
 
     private List<Integer> linkedListOfNumbers;
+    private List<Integer> arrayListOfNumbers;
 
     @Setup
     public void init() {
         linkedListOfNumbers = new LinkedList<>();
         addNumbers(linkedListOfNumbers);
+
+        arrayListOfNumbers = new ArrayList<>();
+        addNumbers(arrayListOfNumbers);
 
         // TODO: put any additional setup code here
     }
@@ -57,7 +62,10 @@ public class OptimisationExample {
 
     @GenerateMicroBenchmark
     public int fastSumOfSquares() {
-        return Exercises.replaceThisWithSolution();
+        return arrayListOfNumbers.parallelStream()
+                                .mapToInt(x->x)
+                                .map(x -> x*x )
+                                .reduce(0, (acc,x)->acc+x);
     }
 
 }
