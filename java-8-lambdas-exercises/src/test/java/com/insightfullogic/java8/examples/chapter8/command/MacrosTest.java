@@ -28,6 +28,7 @@ Macro macro = new Macro();
 macro.record(() -> editor.open());
 macro.record(() -> editor.save());
 macro.record(() -> editor.close());
+macro.record(() -> String.valueOf(1));
 macro.run();
 // END lambdaBasedCommand
 

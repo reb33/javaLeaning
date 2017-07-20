@@ -1,6 +1,7 @@
 package com.insightfullogic.java8.myExemples.samples.grouping;
 
 import java.util.*;
+import java.util.function.Function;
 
 
 import static java.util.stream.Collectors.*;
@@ -18,7 +19,7 @@ public class StringToMap {
         return str.chars().parallel()
                 .collect(HashMap::new,
                         (map,i)->{
-                    String key = Character.valueOf((char)i).toString().toLowerCase();
+                    String key = IToSLower(i);
                     map.merge(key,Integer.valueOf(1),(v1,v2)->v1+v2);},
                         (map1,map2)->mergeMaps(map1,map2));
     }
@@ -40,6 +41,12 @@ public class StringToMap {
         return str.chars()
                 .boxed()
                 .collect(groupingBy(StringToMap::IToSLower, counting()));
+    }
+
+    public static Map<String,Integer> strToMap3_1(String str){
+        return str.chars()
+                .boxed()
+                .collect(groupingBy(StringToMap::IToSLower, summingInt(i->1)));
     }
 
     public static Map<String,Integer> strToMap4(String str){
@@ -69,7 +76,7 @@ public class StringToMap {
 
     public static void main(String[] args) {
         String str = "aaaavnjsfjjjsss";
-        System.out.println(strToMap4("aaaavnjsfjjjsss"));
+        System.out.println(strToMap3_1("aaaavnjsfjjjsss"));
 
 
     }
