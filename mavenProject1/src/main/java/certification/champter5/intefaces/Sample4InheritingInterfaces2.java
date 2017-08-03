@@ -3,7 +3,12 @@ package certification.champter5.intefaces;
 /**
  * Created by konstantin on 26.06.2017.
  */
+/*Если класс наследует от родительского и дочернего интерфейсов, то воспринимается только дочерний*/
 public class Sample4InheritingInterfaces2 {
+    public static void main(String[] args) {
+        Class42 c= new Class42();
+        c.m1();
+    }
 }
 
 class Class42 implements Inter1_42, Inter2_42{}
