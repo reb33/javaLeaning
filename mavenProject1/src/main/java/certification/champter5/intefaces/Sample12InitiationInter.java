@@ -11,6 +11,7 @@ public class Sample12InitiationInter {
 
     public static void main(String[] args) {
         System.out.println(Parent12.a);
+        System.out.println(Sub12.f);
 //        Parent12.m1();
 //        System.out.println(Sub12.c);
 //        System.out.println(Class.f);
@@ -35,6 +36,6 @@ interface Parent12 extends SParent12{
 interface Sub12 extends Parent12{
     String e = Sample12InitiationInter.init("Sub_e");
     String f = Sample12InitiationInter.init("Sub_f");
-    String a="Sub_a";
+//    String a="Sub_a";
 }
 class Class implements Sub12,SParent12{}

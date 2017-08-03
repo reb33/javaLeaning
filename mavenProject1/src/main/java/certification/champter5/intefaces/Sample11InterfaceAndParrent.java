@@ -13,14 +13,14 @@ public class Sample11InterfaceAndParrent {
 }
 
 class Sub11 extends Parent11 implements Int11{
-    public void m1(){
-        System.out.println("m1 - Sub");
-        super.m1();
-    }
+//    public void m1(){
+//        System.out.println("m1 - Sub");
+//        super.m1();
+//    }
 
 }
 class Parent11{
-    void m1(){
+    public void m1(){
         System.out.println("m1 - Parrent");
     }
 }
