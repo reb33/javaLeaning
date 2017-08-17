@@ -43,6 +43,8 @@ public class Sample7Overriding extends ParentClass {
 
 class SubClass extends Sample7Overriding{
     public void method1(){}
+
+    //можно возвращать подклассы
     ret3 method2(){return null;}
     void method3(){}
 }
