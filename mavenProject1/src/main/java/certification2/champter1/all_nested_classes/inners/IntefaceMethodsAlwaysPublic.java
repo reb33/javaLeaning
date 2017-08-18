@@ -5,7 +5,7 @@ package certification2.champter1.all_nested_classes.inners;
  */
 public class IntefaceMethodsAlwaysPublic {
 
-    private interface I1{
+    protected interface I1{
         void m1();
     }
 
