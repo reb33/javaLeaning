@@ -1,4 +1,4 @@
-package certification2.champter1.tricks;
+package certification2.tricks;
 
 import org.apache.commons.lang3.StringUtils;
 

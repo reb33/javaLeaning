@@ -1,4 +1,4 @@
-package certification2.champter1.tricks;
+package certification2.tricks;
 
 /**
  * Created by konstantin on 03.08.2017.
