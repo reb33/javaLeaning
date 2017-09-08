@@ -30,6 +30,7 @@ public class StronglyLimited {
 //        listNumber = listUnt;
 
         listNumber.addAll(listUnt);
+        new ArrayList<Number>(new ArrayList<Integer>());
 
         m2(listNumber);
         /*нельзя указывать подкласс при вызове если не использовалось upper bounds*/

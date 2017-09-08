@@ -27,11 +27,12 @@ enum E2{
     static {
         System.out.println("static initiator");
     }
-    {
-        System.out.println("Initiator "+this.name());
-    }
     E2(){
         System.out.println("It's value "+this.name());
         opt="a";
     }
+    {
+        System.out.println("Initiator "+this.name());
+    }
+
 }
