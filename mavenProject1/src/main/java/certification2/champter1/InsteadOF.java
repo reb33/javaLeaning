@@ -14,6 +14,8 @@ public class InsteadOF {
     public static void main(String[] args) {
         /*Если null слева от instradof то возвращается false*/
         System.out.println(null instanceof Object);
+        /*Справа должен быть класс или интерфейс*/
+//        System.out.println(new Object() instanceof null);
 
         /*Объекты интерфейсов не вызывают ошибку компиляции при сравнивании с несвязанными классами*/
         Runnable r = new Thread();
