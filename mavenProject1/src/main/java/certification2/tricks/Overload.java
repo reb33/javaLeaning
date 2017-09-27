@@ -7,8 +7,12 @@ public class Overload {
     public static void main(String[] args) {
         /*short сначала переводится в long, потом во float*/
         m1((short)5);
-        /*long во float не переводится*/
+        /*float в long не переводится*/
 //        m1(1.0f);
+
+        /*метод выбирается от типа переменной*/
+        Object obj = 3;
+        m2(obj);
 
     }
     static void m1(long l){
@@ -16,5 +20,12 @@ public class Overload {
     }
     static void m1(float f){
         System.out.println("float");
+    }
+
+    static void m2(Object obj){
+        System.out.println("m2 Object "+obj.getClass());
+    }
+    static void m2(Integer i){
+        System.out.println("m2 Integer");
     }
 }

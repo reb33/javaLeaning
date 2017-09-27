@@ -17,13 +17,19 @@ public class MultiVar_RTInstance {
         * должен вызываться метод первого параметра, при этом первый параметр обозначается классом*/
         m1(Test1::m1);
 
+        /*Название класса можно заменить на интерфейсы или скперклассы*/
+        m1(Isub::m1);
+
         /*ссылка на метод runtime объект смотрит только на 1 элемент*/
 //        m3(Test1::m1);
 
     }
 
-    class Test1{
-        void m1(Integer i1, Integer i2, Integer i3){}
+    class Test1 implements Isub{
+        public void m1(Integer i1, Integer i2, Integer i3){}
+    }
+    interface Isub{
+        void m1(Integer i1, Integer i2, Integer i3);
     }
 
     interface I1{

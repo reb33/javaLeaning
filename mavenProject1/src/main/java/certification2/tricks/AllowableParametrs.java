@@ -10,6 +10,12 @@ public class AllowableParametrs {
     static void m3(Double d){
         System.out.println("Double");
     }
+    static void m1(long l){
+        System.out.println("m1 long");
+    }
+    static void m4(float l){
+        System.out.println("m4 float");
+    }
 
     public static void main(String[] args) {
         /*m2 подходит т.к. применяется расширение*/
@@ -17,5 +23,10 @@ public class AllowableParametrs {
 
         /*m3 не подходит т.к. нельзя одновремено применять расширение и autoboxing, допустимо только 1 преобразование*/
 //        m3(3L);
+
+        /*float в long не переводится*/
+//        m1(1f);
+        /*long во float переводится*/
+        m4(1l);
     }
 }
