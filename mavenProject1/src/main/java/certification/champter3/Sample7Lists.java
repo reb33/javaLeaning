@@ -31,7 +31,9 @@ public class Sample7Lists {
         System.out.println(listDouble.contains("111"));
 
         System.out.println("\nm2:");
+        m1();
         m2();
+        m4();
     }
 
     static void m1(){
@@ -56,5 +58,13 @@ public class Sample7Lists {
         list.add(new Double(3));
         list.add(3f);
         list.add(5d);
+    }
+    static void m4(){
+        System.out.println("\nm4:");
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(0);
+        list.remove(1);
+        System.out.println(list);
     }
 }

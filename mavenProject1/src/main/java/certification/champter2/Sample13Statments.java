@@ -18,4 +18,12 @@ public class Sample13Statments {
         }while(true);
         int i=1;
     }
+    void m1(boolean b){
+        if(b){}
+        System.out.println(b);
+        while (b){}
+        System.out.println(b);
+        for(;b;){}
+        System.out.println(b);
+    }
 }

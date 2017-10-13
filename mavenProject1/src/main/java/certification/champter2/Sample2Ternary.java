@@ -31,6 +31,7 @@ public class Sample2Ternary {
         Integer integer = 3;
 //        s=(short)integer
         String str = b>1?null:"str";
+        double doub = b>1?1d:1l;
 
         Number n = b>1?new Integer(3):(Number) 3;
         n = b>1?new Integer(3):new Double(3d);

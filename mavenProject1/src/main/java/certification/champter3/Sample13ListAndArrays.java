@@ -13,9 +13,10 @@ public class Sample13ListAndArrays {
         Integer[] arr1 = list.toArray(new Integer[27]);
         System.out.println(Arrays.toString(arr1));
 
-        Integer[] arr2 = new Integer[4];
+        Integer[] arr2 = new Integer[8];
         arr2[0]=1;
         Integer[] arr3 = list.toArray(arr2);
+        System.out.println(arr2==arr3);
         System.out.println(arr2.clone()==arr3);
         System.out.println(Arrays.equals(arr2.clone(),arr3));
         System.out.println(Arrays.toString(arr2));
