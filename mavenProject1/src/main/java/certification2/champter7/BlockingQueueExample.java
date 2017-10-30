@@ -2,11 +2,13 @@ package certification2.champter7;
 
 import java.util.concurrent.*;
 
+import static java.lang.System.*;
+
 public class BlockingQueueExample {
 
     public static void main(String[] args) {
         m_deque();
-        System.out.println();
+        out.println();
         m_queue();
     }
 
@@ -14,9 +16,9 @@ public class BlockingQueueExample {
         try { BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>();
             blockingQueue.offer(39);
             blockingQueue.offer(3 , 4, TimeUnit.SECONDS);
-            System.out.println(blockingQueue);
-            System.out.println(blockingQueue.poll());
-            System.out.println(blockingQueue.poll(10, TimeUnit.MILLISECONDS));
+            out.println(blockingQueue);
+            out.println(blockingQueue.poll());
+            out.println(blockingQueue.poll(10, TimeUnit.MILLISECONDS));
         } catch (InterruptedException e) {
             // Handle interruption
         }
@@ -30,12 +32,12 @@ public class BlockingQueueExample {
             blockingDeque.offerLast(47, 100, TimeUnit.MICROSECONDS);
             blockingDeque.offer(3, 4, TimeUnit.SECONDS);
 
-            System.out.println(blockingDeque);
+            out.println(blockingDeque);
 
-            System.out.println(blockingDeque.poll());
-            System.out.println(blockingDeque.poll(950, TimeUnit.MILLISECONDS));
-            System.out.println(blockingDeque.pollFirst(200, TimeUnit.NANOSECONDS));
-            System.out.println(blockingDeque.pollLast(1, TimeUnit.SECONDS));
+            out.println(blockingDeque.poll());
+            out.println(blockingDeque.poll(950, TimeUnit.MILLISECONDS));
+            out.println(blockingDeque.pollFirst(200, TimeUnit.NANOSECONDS));
+            out.println(blockingDeque.pollLast(1, TimeUnit.SECONDS));
         } catch (InterruptedException e) {
             // Handle interruption
         }
