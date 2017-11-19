@@ -13,9 +13,13 @@ public class AwaitTerminationCheck {
             es = Executors.newSingleThreadExecutor();
 
             es.submit(()-> {
-                Thread.sleep(2000);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("it's over now");
-                return null;});
+                return;});
         }finally {
             if (es !=null) es.shutdown();
         }
