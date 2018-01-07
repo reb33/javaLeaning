@@ -40,6 +40,9 @@ public class StronglyLimited {
         m3(listUnt);
 
         m4(listUnt);
+
+        m5(listNumber);
+        m5(listUnt);
     }
 
     void m2 (List<Number> list){
