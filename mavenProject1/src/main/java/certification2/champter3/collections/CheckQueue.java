@@ -13,8 +13,11 @@ public class CheckQueue {
         deque.push("hello");
         deque.push("hi");
         deque.push("oli");
-        IntStream.range(0,3).forEach(i -> System.out.println(deque.peek()));
-//        for (int i=0;i<3;i++)
-//            System.out.println(deque.peek());
+        deque.offer("ege-gey");
+        deque.push("bonjorna");
+
+        int size = deque.size();
+        for (int i=0;i<size;i++)
+            System.out.println(deque.pop());
     }
 }

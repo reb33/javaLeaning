@@ -17,6 +17,7 @@ class ParentClass{
         method1();
     }
     void method5() throws Exception{}
+    void method6(){}
 }
 
 public class Sample7Overriding extends ParentClass {
@@ -39,6 +40,8 @@ public class Sample7Overriding extends ParentClass {
         s.method();
     }
     void method5() throws exc1, exc2, exc2, exc3, exc1, IOException{}
+    //нельзя переопределять статиком - ошибка компиляции
+//    static void method6(){}
 }
 
 class SubClass extends Sample7Overriding{

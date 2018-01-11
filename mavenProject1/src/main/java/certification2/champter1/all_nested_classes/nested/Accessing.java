@@ -1,6 +1,6 @@
 package certification2.champter1.all_nested_classes.nested;
 
-//import static certification2.champter1.all_nested_classes.nested.Accessing.Nested.*;
+import static certification2.champter1.all_nested_classes.nested.Accessing.Nested.*;
 
 /**
  * Created by konstantin on 18.08.2017.
@@ -22,9 +22,9 @@ public class Accessing {
         System.out.println(Nested.i2);
         Nested.i3+=1;
 
-//        i3++;
+        i3++;
 //        m2();
-//        m3();
+        m3();
     }
 }
 
