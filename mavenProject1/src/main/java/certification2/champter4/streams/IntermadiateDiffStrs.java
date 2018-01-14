@@ -1,5 +1,6 @@
 package certification2.champter4.streams;
 
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -11,7 +12,7 @@ public class IntermadiateDiffStrs {
     //m1 не работает - переменная stream не обновляется
     //m2 работает
     public static void main(String[] args) {
-        m2();
+        m3();
 
     }
 
@@ -29,6 +30,13 @@ public class IntermadiateDiffStrs {
         stream = stream.filter(i -> i<7);
         stream = stream.peek(System.out::println);
         stream.count();
+    }
+
+    static void m3(){
+        Stream<Integer> s = Stream.of(1);
+        IntStream is = s.mapToInt(x->x);
+        DoubleStream ds = s.mapToDouble(x->x);
+        Stream<Integer> s2 = ds.mapToInt(x->(int)x).boxed();
     }
 
 
