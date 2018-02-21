@@ -9,7 +9,6 @@ public class InnerExdendsStatic {
 
     static class C{}
 
+    //не static может быть наследован от статик
     class D extends C{}
-
-//    static class E extends D{}
 }
