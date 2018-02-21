@@ -7,12 +7,14 @@ import java.util.stream.IntStream;
  */
 public class SampleInner1 {
     private String greeting = "Hi";
+    private static String greetS ="";
 
     private class Inner{
         private int repeat = 3;
 
         private void go(){
             //inner класс имеет доступ к private членам outer класса
+            System.out.println(greetS);
             IntStream.range(0,repeat).forEach(i ->
                 System.out.println(greeting)
             );

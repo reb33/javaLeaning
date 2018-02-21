@@ -9,5 +9,6 @@ public class OverrideMethods {
     class Inner extends OverrideMethods{
         /*inner класс не может включать в себя static*/
 //        static void m1(){}
+//        static int i;
     }
 }
