@@ -1,6 +1,6 @@
 package certification2.tricks;
 
-public class OrderOfInitialization {
+public class OrderOfInitialization extends A{
 
     public static void main(String[] args) {
         OrderOfInitialization o = new OrderOfInitialization();
@@ -31,4 +31,13 @@ public class OrderOfInitialization {
         System.out.println(2);
         return "";
     }
+
+
 }
+
+class  A{
+    static {
+        System.out.println("static A");
+    }
+}
+
