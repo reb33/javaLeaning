@@ -6,6 +6,11 @@ public class InnersDeclaretions {
 
     static class B{}
 
+    B b = new B();
+//    B b1 = this.new B();
+    A a = new A() ;
+    A a1 = this.new A();
+
     void m1(){
         new A();
         new B();
@@ -16,6 +21,7 @@ public class InnersDeclaretions {
     }
 
     static void m2(){
+        class C extends A{}
 //        new A();
         new B();
 //        new InnersDeclaretions.A();
