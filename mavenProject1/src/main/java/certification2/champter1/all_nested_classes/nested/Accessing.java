@@ -20,6 +20,8 @@ public class Accessing {
         void m4(){
             //члены внешнего класса доступны в nested
             new Accessing().m1();
+            //нельзя вызвать не статик элементы
+//            m1();
             System.out.println(new Accessing().oi1);
             om1();
         }
