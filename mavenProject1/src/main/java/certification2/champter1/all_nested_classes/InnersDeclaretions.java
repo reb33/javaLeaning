@@ -21,7 +21,7 @@ public class InnersDeclaretions {
     }
 
     static void m2(){
-        class C extends A{}
+//        class C extends A{}
 //        new A();
         new B();
 //        new InnersDeclaretions.A();
