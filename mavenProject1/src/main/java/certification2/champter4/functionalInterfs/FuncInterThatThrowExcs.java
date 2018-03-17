@@ -9,4 +9,10 @@ public class FuncInterThatThrowExcs {
     private interface RunnerWithExc{
         void run () throws Exception;
     }
+
+
+    public static void main(String[] args) {
+        FuncInterThatThrowExcs f = new FuncInterThatThrowExcs();
+        f.runInter(()->{throw new Exception();});
+    }
 }
