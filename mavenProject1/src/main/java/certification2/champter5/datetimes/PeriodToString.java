@@ -16,5 +16,6 @@ public class PeriodToString {
         Period p4 = Period.ofMonths(12);
 
         System.out.println(p1+" "+p2+" "+p3+" "+p4);
+        System.out.println(Period.ofDays(15789));
     }
 }

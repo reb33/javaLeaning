@@ -15,5 +15,6 @@ public class DurationToString {
         System.out.println("Duration.ofMillis(4500)\t\t"+Duration.ofMillis(4500));
         System.out.println("Duration.ofMillis(5)\t\t"+Duration.ofMillis(5));
         System.out.println("Duration.ofDays(0)\t\t\t"+Duration.ofDays(0));
+        System.out.println(Duration.ofSeconds(45561));
     }
 }
